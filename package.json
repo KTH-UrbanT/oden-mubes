@@ -1,26 +1,30 @@
 {
   "name": "oden-mubes",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "homepage": "https://kth-urbant.github.io/oden-mubes",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
+    "@turf/centroid": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "axios": "^0.25.0",
+    "mapbox-gl": "^2.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "react-trunc": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {

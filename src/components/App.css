@@ -1,0 +1,56 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.8);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.BuildingDetail {
+  background-color: rgba(35, 55, 75, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 12px;
+}
+
+.SimulationList {
+  background-color: rgba(35, 55, 75, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px;
+}
+
+.SimulationResults {
+  background-color: rgba(35, 55, 75, 0.8);
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  height: 100px;
+  width: 50%;
+  margin: 12px;
+}
+
+.SimulationResults .ui.message {
+  height: 100%;
+  overflow: scroll;
+  white-space: pre;
+}
+
+.no-border {
+  outline: 0 !important;
+}
