@@ -139,7 +139,7 @@ const Map = () => {
     });
 
     // POST-based request
-    const queueSimulation = async () => {
+    const queueSimulations = async () => {
         const uuidsToSimulate = buildingsToSimulate.map(building => {
             return {
                 uuid: building['50A_UUID']
@@ -184,7 +184,7 @@ const Map = () => {
           <SimulationList buildingsToSimulate={buildingsToSimulate}
                           availableBuildings={availableBuildings}
                           setBuildingsToSimulate={setBuildingsToSimulate}
-                          queueSimulation={queueSimulation}
+                          queueSimulations={queueSimulations}
                           simulationResults = {simulationResults}
                           setSimulationResults = {setSimulationResults}
           />
