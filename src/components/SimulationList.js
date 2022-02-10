@@ -4,7 +4,7 @@ import SimulationListItem from "./SimulationListItem";
 const SimulationList = ({buildingsToSimulate,
                           availableBuildings,
                           setBuildingsToSimulate,
-                          queueSimulation,
+                          queueSimulations,
                           simulationResults,
                           setSimulationResults}) => {
   function onCloseButtonClick (removedBuilding) {
@@ -32,7 +32,7 @@ const SimulationList = ({buildingsToSimulate,
         </div>
         <button className="ui primary button"
                 onClick={() =>
-                  queueSimulation()
+                  queueSimulations()
                     .then(data => setSimulationResults([...simulationResults,...data]))
                     .catch(err => console.error(err))
                 }>
